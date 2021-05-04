@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene embedded arjs>
+
+        <a-assets>
+            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/sam60335668/sam60335668.github.io/master/AR-DEMO/asset/3D Model - Mudskipper - Final.gltf"></a-asset-item>
+        </a-assets>
+            
+        <a-entity gltf-model="#animated-asset" scale="2">
+        </a-entity>
+
+        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
+        <a-entity camera preset='hiro'></a-entity>
+        </a-scene>
+    </body>
+</html>
