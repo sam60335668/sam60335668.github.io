@@ -4,12 +4,16 @@
         <meta name="viewport" content="ar-demo">
     </head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js""></script>
     <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
     
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-
+                                                                                             
+        <a-marker preset="hiro">
+            <a-box position='0 0.5 0' material='color: black;'></a-box>
+        </a-marker> 
+                                                                                             
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/sam60335668/sam60335668.github.io/asset/3D Model - Mudskipper - Final.gltf"></a-asset-item>
         </a-assets>
@@ -18,7 +22,7 @@
         </a-entity>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-        <a-entity camera preset='hiro'></a-entity>
+        <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
