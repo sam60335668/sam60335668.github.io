@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
     </head>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
@@ -9,7 +9,7 @@
     <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' renderer="antialias: false; logarithmicDepthBuffer:true">
         <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/sam60335668/sam60335668.github.io/main/assets/pattern-frame.patt'>
-          <a-entity position='-6 -8 -3' scale="0.8 0.8 0.8" gltf-model="https://raw.githubusercontent.com/sam60335668/sam60335668.github.io/main/assets/mudskipper.gltf"></a-entity>
+          <a-entity position='-6 -8 -3' scale="1.5 1.5 1.5" gltf-model="https://raw.githubusercontent.com/sam60335668/sam60335668.github.io/main/assets/mudskipper.gltf"></a-entity>
         </a-marker-camera>
       </a-scene>
     </body>
