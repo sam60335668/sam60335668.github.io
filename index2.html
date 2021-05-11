@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width">
         <style>
-		.model-viewer{
+		model-viewer{
 			width: 400px;
 			height: 600px;
 			margin: 0 auto;
@@ -19,15 +19,18 @@
 		  margin: 4px 2px;
 		  cursor: pointer;
 		}
-		.button1 {background-color: #4CAF50; border-radius: 12px;} /* Green */
-		.button2 {background-color: #008CBA; border-radius: 12px;} /* Blue */
+		.button1 {background-color: #c4853c; border-radius: 12px;}
+		.button2 {background-color: #d6548a; border-radius: 12px;}
+		.wrapper {text-align: center;}
 	</style>
     </head>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
 		<model-viewer src="assets/clam.gltf" ar camera-controls auto-rotate></model-viewer>
+	   	<div class="wrapper">
 		<a href="index.html"><button class="button button1">Mudskipper</button></a>
 		<a href="index2.html"><button class="button button2">Clam</button></a>
+		</div>
     </body>
 </html>
